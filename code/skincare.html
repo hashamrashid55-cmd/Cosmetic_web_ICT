@@ -1,0 +1,234 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare - Skin Co.</title>
+<style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffe4e6;
+      }
+      .header {
+        text-align: center;
+        background-color: #ffd4d6;
+        padding: 10px 0;
+        font-size: 14px;
+        color: #000;
+      }
+      .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background: #ff758c;
+        color: #fff;
+        position: sticky;
+        top: 0;
+      }
+    h1 {
+   	 font-size: 36px;
+	font-weight: bold;
+	margin: 0;
+	}
+
+      .nav-links {
+        display: flex;
+        gap: 40px;
+        margin-top: 15px;
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+      }
+      .nav-links a:hover {
+        color: #ffe4e6;
+      }
+      .nav-icons {
+        display: flex;
+        gap: 15px;
+        margin-top: 15px;
+      }
+      .nav-icons img {
+        width: 25px;
+        height: 25px;
+      }
+      .products-section {
+        padding: 20px;
+        background-color: #ffffff;
+      }
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+      .product-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+      .product-card {
+        background-color: #f9f9f9;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        width: 250px;
+        text-align: center;
+        padding: 15px;
+      }
+      .product-card img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+      .product-card h3 {
+        font-size: 20px;
+        color: #333;
+        margin: 10px 0;
+      }
+      .product-card p {
+        font-size: 16px;
+        color: #666;
+        margin: 10px 0;
+      }
+      .add-to-cart-btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #ff7373;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+      }
+      .add-to-cart-btn:hover {
+        background-color: #ff5050;
+      }
+  </style>
+
+
+
+ </head>
+<body>
+<!-- Announcement Banner -->
+<div class="header">
+  Delivery Time delayed due to high demand and road blockages!
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <h1>Skin Co.</h1>
+   <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="shop%20all.html">Shop All</a>
+        <a href="skincare.html">Skincare</a>
+        <a href="haircare.html">Hair Care</a>
+    </div>
+  <div class="nav-icons">
+    <a href="contact%20us.html"><img src="phone.png" alt="cart"></a>
+  </div>
+</div>
+
+<!-- Products Section -->
+<div class="products-section">
+  <h2>Skincare Products</h2>
+  <div class="product-grid">
+      <!-- Product 1 -->
+    <div class="product-card">
+      <img src="pexels-karolina-grabowska-4735904.jpg" alt="Rice Milk Toner">
+      <h3>Rice Milk Toner</h3>
+      <p>Brightening formula for soft, glowing skin.</p>
+      <span>$25</span>
+      <br>
+      <button class="add-to-cart-btn" onclick="addToCart('Rice Milk Toner', 25)">Add to Cart</button>
+    </div>
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="pexels-cinematicamp-15061732.jpg" alt="Glow Serum">
+      <h3>Glow Serum</h3>
+      <p>Nourish and hydrate your skin naturally.</p>
+      <span>$30</span>
+      <br>
+      <button class="add-to-cart-btn" onclick="addToCart('Glow Serum', 30)">Add to Cart</button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="pexels-mohammadrezababaei-15327092.jpg" alt="Herbal Cleanser">
+      <h3>Herbal Cleanser</h3>
+      <p>Gentle cleansing for all skin types.</p>
+      <span>$20</span>
+      <br>
+      <button class="add-to-cart-btn" onclick="addToCart('Herbal Cleanser', 20)">Add to Cart</button>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <img src="pexels-cinematicamp-15061732.jpg" alt="Vitamin C serum">
+      <h3>Vitamin C serum</h3>
+      <p>Brightens the skin, SPF enhancer.</p>
+      <span>$25</span>
+      <br>
+      <button class="add-to-cart-btn" onclick="addToCart('Vitamin C serum', 25)">Add to Cart</button>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-card">
+      <img src="pexels-cinematicamp-15061732.jpg" alt="Vitamin C + E serum ">
+      <h3>Vitamin C + E serum </h3>
+      <p>Brightens the skin, SPF enhancer, Moisturizes.</p>
+      <span>$30</span>
+      <br>
+      <button class="add-to-cart-btn" onclick="addToCart('Vitamin C + E serum', 35)">Add to Cart</button>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product-card">
+      <img src="pexels-cinematicamp-15061732.jpg" alt="Hyaluronic acid ">
+      <h3>Hyaluronic acid </h3>
+      <p>Has an anti-aging and Moisturizing effect</p>
+      <span>$25</span>
+      <br>
+      <button class="add-to-cart-btn" onclick="addToCart('Hyaluronic acid', 25)">Add to Cart</button>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="product-card">
+      <img src="pexels-cinematicamp-15061732.jpg" alt="Glycolic acid ">
+      <h3>Glycolic acid </h3>
+      <p>Exfoliates the skin</p>
+      <span>$35</span>
+      <br>
+      <button class="add-to-cart-btn" onclick="addToCart('Glycolic acid ', 35)">Add to Cart</button>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="product-card">
+      <img src="sunscreen.jpg" alt="Sunscreen ">
+      <h3>Sunscreen </h3>
+      <p>50 SPF, Protects the skin</p>
+      <span>$35</span>
+      <br>
+      <button class="add-to-cart-btn" onclick="addToCart('Sunscreen ', 35)">Add to Cart</button>
+    </div>
+
+</div>
+<script>
+
+    let totalBill = 0;
+    function addToCart(productName, productPrice) {
+
+    totalBill = totalBill+ productPrice;
+
+      alert(productName + " has been added to your cart!\nYour current bill is: $" + totalBill);
+    }
+  </script>
+
+</body>
+</html>
+
+

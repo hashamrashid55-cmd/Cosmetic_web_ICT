@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Two Numbers</title>
+</head>
+<style>
+    .hightlight{
+        font-weight:"bold";
+    }
+</style>
+<body>
+<h3>Write a code for adding two field values using JavaScript</h3>
+
+Value 1: <input type="number" id="value1" value="12"><br><br>
+Value 2: <input type="number" id="value2" value="23"><br><br>
+Result: <span id="result"></span><br><br>
+
+<button onclick="addValues()">Click Me</button>
+
+<script>
+    function addValues() {
+        // Get the values from input fields
+         value1 = parseInt(document.getElementById('value1').value);
+         value2 = parseInt(document.getElementById('value2').value);
+        // Add the two values
+         sum = value1 + value2;
+
+        // Display the result
+        document.getElementById('result').innerText = sum;
+    }
+</script>
+</body>
+</html>
